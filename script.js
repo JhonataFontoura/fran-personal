@@ -12,6 +12,40 @@ const modalMedia = document.getElementById('modal-media');
 const closeModalButtons = document.querySelectorAll('[data-close-modal]');
 const toast = document.getElementById('toast');
 
+const realResults = [
+  {
+    src: 'assets/results/resultado-01.webp',
+    alt: 'Resultado real de acompanhamento: comparação antes e depois, vista frontal e posterior.'
+  },
+  {
+    src: 'assets/results/resultado-02.webp',
+    alt: 'Segundo resultado real de acompanhamento: comparação antes e depois, vista frontal e posterior.'
+  }
+];
+
+const resultMedia = document.querySelectorAll('.result-card .result-media');
+realResults.forEach((result, index) => {
+  const media = resultMedia[index];
+  if (!media) return;
+
+  media.innerHTML = `
+    <img
+      src="${result.src}"
+      alt="${result.alt}"
+      loading="lazy"
+      decoding="async"
+      style="width:100%;height:100%;object-fit:cover;display:block"
+    >
+    <span
+      aria-hidden="true"
+      style="position:absolute;left:12px;bottom:12px;padding:7px 10px;border-radius:999px;background:rgba(9,7,9,.82);color:#fff;font-size:.68rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(8px)"
+    >Antes ↑ • Depois ↓</span>
+  `;
+  media.style.position = 'relative';
+  media.style.overflow = 'hidden';
+  media.style.background = '#090709';
+});
+
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 12);
 });
