@@ -6,6 +6,21 @@
   <meta name="description" content="Fran Personal — treino, técnica, nutrição e rotina com estratégia para a vida real.">
   <title>Fran Personal | Treino, Nutrição & Lifestyle</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #resultados .results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+    #resultados .result{background:linear-gradient(180deg,#0d0b0f,#17131a);border:1px solid #5a2338;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px #0005}
+    #resultados .result-headline{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px 12px}
+    #resultados .result-headline strong{color:#ff4f91;font-size:1rem;text-transform:uppercase;letter-spacing:.03em}
+    #resultados .result-headline span{color:#fff;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+    #resultados .result-media{height:auto;aspect-ratio:767/1024;background:#090709;overflow:hidden;border-top:1px solid #3b1c28;border-bottom:1px solid #3b1c28}
+    #resultados .result-media img{width:100%;height:100%;display:block;object-fit:contain;background:#090709}
+    #resultados .result-copy{display:flex;align-items:center;gap:14px;padding:18px 20px 20px;background:linear-gradient(180deg,#17131a,#121015)}
+    #resultados .result-icon{width:42px;height:42px;border:2px solid #ff4f91;border-radius:50%;display:grid;place-items:center;color:#ff4f91;font-weight:900;flex:0 0 auto}
+    #resultados .result-copy strong{color:#ff4f91;font-size:1rem;text-transform:uppercase}
+    #resultados .result-copy small{display:block;color:#d8cbd1;margin-top:2px;font-size:.8rem}
+    #resultados .proof-note{text-align:center;margin-top:22px}
+    @media(max-width:760px){#resultados .results-grid{grid-template-columns:1fr}#resultados .result-headline{align-items:flex-start;flex-direction:column;gap:4px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -123,30 +138,39 @@
             <p class="eyebrow">Resultados reais</p>
             <h2 class="title">Evolução que pode ser vista.</h2>
           </div>
-          <p class="lead">Resultados reais de acompanhamento apresentados em comparações antes e depois.</p>
+          <p class="lead">Disciplina, método e consistência que transformam.</p>
         </div>
 
         <div class="results-grid">
           <article class="result reveal">
-            <div class="result-media" style="height:auto;aspect-ratio:3/4">
-              <img src="assets/results/evolucao-01.webp" alt="Evolução 01: comparação antes e depois da primeira aluna, vistas frontal e posterior" loading="lazy" decoding="async" style="object-fit:contain;background:#090709">
+            <div class="result-headline">
+              <strong>🏋 Evolução 01</strong>
+              <span>Com foco, tudo muda!</span>
             </div>
-            <div class="result-copy"><small>Resultado real</small><strong>Evolução 01</strong></div>
+            <div class="result-media">
+              <img src="assets/results/resultado-02.webp" alt="Evolução 01: antes e depois, vistas frontal e posterior" loading="lazy" decoding="async">
+            </div>
+            <div class="result-copy">
+              <span class="result-icon">◎</span>
+              <div><strong>+ Definição e tonificação</strong><small>Resultados que vão além do físico.</small></div>
+            </div>
           </article>
 
           <article class="result reveal">
-            <div class="result-media" style="height:auto;aspect-ratio:3/4">
-              <img src="assets/results/evolucao-02.webp" alt="Evolução 02: comparação antes e depois da segunda aluna, vistas frontal e posterior" loading="lazy" decoding="async" style="object-fit:contain;background:#090709">
+            <div class="result-headline">
+              <strong>🏋 Evolução 02</strong>
+              <span>Com foco, tudo muda!</span>
             </div>
-            <div class="result-copy"><small>Resultado real</small><strong>Evolução 02</strong></div>
-          </article>
-
-          <article class="result future reveal">
-            <div class="compare">Próximo resultado<br>em breve</div>
-            <div class="result-copy"><small>Resultado real</small><strong>Nova evolução</strong></div>
+            <div class="result-media">
+              <img src="assets/results/resultado-01.webp" alt="Evolução 02: antes e depois, vistas frontal e posterior" loading="lazy" decoding="async">
+            </div>
+            <div class="result-copy">
+              <span class="result-icon">◎</span>
+              <div><strong>+ Definição muscular</strong><small>Mais autoestima e qualidade de vida.</small></div>
+            </div>
           </article>
         </div>
-        <p class="proof-note">As imagens são carregadas em WebP com lazy loading para manter a página leve.</p>
+        <p class="proof-note">Resultados reais apresentados em comparações antes e depois.</p>
       </div>
     </section>
 
