@@ -1,6 +1,5 @@
 const header = document.querySelector('.site-header');
 const revealElements = document.querySelectorAll('.reveal');
-const playButton = document.querySelector('.story-video .play');
 const year = document.getElementById('year');
 
 window.addEventListener('scroll', () => {
@@ -20,10 +19,6 @@ if ('IntersectionObserver' in window) {
 } else {
   revealElements.forEach((element) => element.classList.add('visible'));
 }
-
-playButton?.addEventListener('click', () => {
-  window.alert('Área pronta para receber o vídeo oficial da história da Fran.');
-});
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
