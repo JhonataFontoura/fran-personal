@@ -91,8 +91,10 @@ img { max-width: 100%; }
 .proof-note { margin-top: 18px; color: #8f7d84; font-size: .75rem; }
 
 .faq { max-width: 850px; margin: auto; }
-.faq details { border-bottom: 1px solid var(--line); padding: 20px 0; }
-.faq summary { cursor: pointer; font-weight: 900; text-transform: uppercase; }
+.faq details { padding: 20px 0; }
+.faq summary { cursor: pointer; font-weight: 900; text-transform: uppercase; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::marker { content: ""; }
 .faq p { color: var(--muted); }
 .cta { text-align: center; background: radial-gradient(circle at 50% 100%, #d13f782b, transparent 35%), #060507; }
 .cta .title { margin: auto; max-width: 15ch; }
